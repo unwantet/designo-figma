@@ -1,0 +1,197 @@
+.first__sec-link-card{
+    width: 541px;
+    height: 308px;
+    flex-shrink: 0;
+    background-image: url(/static/images/phone-on-hand\ \(1\).jpg);
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    border-radius:15px ;
+
+
+        .bg{
+            width: 541px;
+            height: 308px;
+            position: absolute;
+            border-radius:15px ;
+        }
+
+
+        :first-child{
+            color: #FFF;
+            font-family: Jost;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px; 
+            letter-spacing: 2px;
+            
+        }
+        .link-row{
+            color: #FFF;
+            font-family: Jost;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;    
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        :hover{
+            background: #e7826b5b ;           
+             cursor: pointer;
+             transition: 0.3s ease;
+        }
+}
+
+.first__third-link-card{
+    width: 541px;
+    height: 308px;
+    flex-shrink: 0;
+    background-image: url(/static/images/graphic-bg.jpg);
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    border-radius:15px ;
+
+
+        .bg{
+            width: 541px;
+            height: 308px;
+            position: absolute;
+            border-radius:15px ;
+        }
+
+
+        :first-child{
+            color: #FFF;
+            font-family: Jost;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px; 
+            letter-spacing: 2px;
+            
+        }
+        .link-row{
+            color: #FFF;
+            font-family: Jost;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;    
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        :hover{
+            background: #e7826b5b ;           
+             cursor: pointer;
+             transition: 0.3s ease;
+        }
+}
+
+.web-design_section{
+    
+    display: flex;
+    margin-top: 64px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    height: 252px;
+    width: auto;
+    background-image: url(../../static/webp/web-design-sc-bg.webp);
+    
+    h1{
+        height: 52px;
+        color: #FFF;
+        text-align: center;
+        font-family: Jost;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 48px;
+    }
+
+    p{
+        height: 52px;
+        color: #FFF;
+        text-align: center;
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 26px; 
+
+    }
+
+}
+
+.first__fourth-link-card{
+    width: 541px;
+    height: 308px;
+    flex-shrink: 0;
+    background-image: url(../../static/images/notebook\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    border-radius:15px ;
+
+
+        .bg{
+            width: 541px;
+            height: 308px;
+            position: absolute;
+            border-radius:15px ;
+        }
+
+
+        :first-child{
+            color: #FFF;
+            font-family: Jost;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px; 
+            letter-spacing: 2px;
+            
+        }
+        .link-row{
+            color: #FFF;
+            font-family: Jost;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;    
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        :hover{
+            background: #e7826b5b ;           
+             cursor: pointer;
+             transition: 0.3s ease;
+        }
+
+}
+
+.comp-section__cards{
+    display: flex;
+    gap: 30px;
+}

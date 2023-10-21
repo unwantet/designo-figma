@@ -1,0 +1,120 @@
+.first_section{
+    display: flex;
+    gap: 30px;
+    margin-top: 160px;
+    a{
+        text-decoration: none;
+    }
+}
+
+.first__link-card:hover{
+    background-color: #E7816B;
+}
+
+.first__link-card{
+    width: 541px;
+    height: 640px;
+    flex-shrink: 0;
+    background-image: url(../../static/images/notebook\ \(1\).png);
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    border-radius:15px ;
+
+
+        .bg{
+            width: 541px;
+            height: 640px;
+            position: absolute;
+            border-radius:15px ;
+        }
+
+
+        :first-child{
+            color: #FFF;
+            font-family: Jost;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px; 
+            letter-spacing: 2px;
+            
+        }
+        .link-row{
+            color: #FFF;
+            font-family: Jost;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;    
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        :hover{
+            background: #e7826b5b ;           
+             cursor: pointer;
+             transition: 0.3s ease;
+
+        }
+}
+
+
+.section__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.second_section{
+    display: flex;
+    gap: 30px;
+    margin-top: 160px;
+}
+
+
+.second__info{
+    width: 350px;
+    height: 412px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    :nth-child(2){
+        color: #333136;
+        text-align: center;
+        font-family: Jost;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; 
+        letter-spacing: 5px;
+    }
+    .info__txt{
+        color: #333136;
+        text-align: center;
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; 
+        }
+
+        img{
+            width: 202px;
+            height: 202px;
+        }
+}
+
+
+
+
+
+
+

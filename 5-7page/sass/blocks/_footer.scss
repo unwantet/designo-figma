@@ -1,0 +1,106 @@
+footer{
+    background: #1D1C1E;
+    padding-top: 144px;
+    height: 490px;
+    
+    }
+    
+    .footer-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        img{
+            width: 196px;
+            height: 24px;
+        }
+        
+        ul{
+            display: flex;
+            gap: 42px;
+        }
+    }
+        
+        .item-li{
+            font-family: Jost;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px; 
+            letter-spacing: 2px;
+            a{
+                text-decoration: none;
+                color: #FFF;
+    
+            }
+            :hover{
+                color: #a0a0a0;
+                text-decoration: underline;
+                transition: all 0.2s ease;
+            }
+        }
+    
+        .hr{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: auto;
+            height: 1px;
+            opacity: 0.1;
+            background: #FFF;
+        }
+        
+        
+            .footer__contact{
+                display: flex;
+                gap: 30px;
+                align-items: flex-end; 
+            }
+        .adress{
+            width: 350px;
+            :first-child{
+            color: #FFF;
+            font-family: Jost;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+            opacity: 0.5;
+            }
+    
+            :last-child{
+                opacity: 0.5;
+                color: #FFF;
+                font-family: Jost;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+            }
+        }
+    
+        .contact-us{
+            width: 350px;
+            color: #FFF;
+            font-family: Jost;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+            opacity: 0.5;
+        }
+    
+        .social{
+            display: flex;
+            gap: 16px;
+            margin-left: 197px;
+            align-items: center;
+    
+        }
+        svg:hover{
+            path{
+                fill: rgb(170, 104, 5);
+                transition: all 0.4s ease ;
+            }
+            cursor: pointer;
+            
+        }       

@@ -1,0 +1,56 @@
+.last-section{
+    width: auto;
+    height: 292px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 160px;
+
+    padding: 72px 96px 46px 95px;
+
+    background-image: url(../../static/images/bg-get.png);
+
+    h2{
+        color: #FFF;
+        font-family: Jost;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; 
+    }
+    p{
+        color: #FFF;
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; 
+    }
+
+    button{
+            width: 152px;
+            height: 56px;
+            flex-shrink: 0;
+            background: #FFF;
+            border-radius: 8px;
+            border: none;
+            p{
+                color: #333136;
+                font-family: Jost;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+
+        }
+}
+
+.get-btn:hover{
+    background-color: #d5d4d4;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}

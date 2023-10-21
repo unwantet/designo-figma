@@ -1,0 +1,660 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-ExtraBold.eot");
+  src: url("/fonts/Jost-ExtraBold.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-ExtraBold.woff2") format("woff2"), url("/fonts/Jost-ExtraBold.woff") format("woff"), url("/fonts/Jost-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-SemiBold.eot");
+  src: url("/fonts/Jost-SemiBold.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-SemiBold.woff2") format("woff2"), url("/fonts/Jost-SemiBold.woff") format("woff"), url("/fonts/Jost-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-Medium.eot");
+  src: url("/fonts/Jost-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-Medium.woff2") format("woff2"), url("/fonts/Jost-Medium.woff") format("woff"), url("/fonts/Jost-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-Thin.eot");
+  src: url("/fonts/Jost-Thin.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-Thin.woff2") format("woff2"), url("/fonts/Jost-Thin.woff") format("woff"), url("/fonts/Jost-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-Light.eot");
+  src: url("/fonts/Jost-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-Light.woff2") format("woff2"), url("/fonts/Jost-Light.woff") format("woff"), url("/fonts/Jost-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-Regular.eot");
+  src: url("/fonts/Jost-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-Regular.woff2") format("woff2"), url("/fonts/Jost-Regular.woff") format("woff"), url("/fonts/Jost-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-Bold.eot");
+  src: url("/fonts/Jost-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-Bold.woff2") format("woff2"), url("/fonts/Jost-Bold.woff") format("woff"), url("/fonts/Jost-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1111px;
+  margin: 0 auto;
+  padding: 0 0;
+}
+
+body{
+  background-image: url(../../../static/webp/body-bg-img.webp);
+  background-position: left;
+  background-position-y: 475px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 1096px 594px;
+}
+
+main{
+  background-image: url(../../../static/webp/body-bg-img2.webp);
+  background-position: right;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 1000px;
+}
+
+.box {
+  background: red;
+  width: 200px;
+  height: 200px;
+  color: aqua;
+}
+
+nav {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 196px;
+  height: 24px;
+}
+
+ul {
+  display: flex;
+  gap: 42px;
+}
+
+li {
+  font-family: "Jost";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 14px;
+  letter-spacing: 2px;
+}
+li a {
+  text-decoration: none;
+  color: #333136;
+}
+li :hover {
+  color: #000000;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+.hero {
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+  color: #FFF;
+}
+
+.bg_img {
+  background-image: url(../../static/images/about-us-bcg.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1111px;
+  height: 500px;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 95px;
+  gap: 32px;
+}
+.bg_img p {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.five_title_ {
+  font-family: "Jost";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0px;
+  color: #E7816B;
+}
+
+.five_title_first {
+  font-family: "Jost";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.hero_pic {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.hero_ {
+  display: flex;
+  margin-top: 160px;
+  flex-direction: row-reverse;
+}
+
+.fifth_paragraph {
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.hero_pic_ {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.bg_img_ {
+  background-image: url(../../static/images/2hero-bcg.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1111px;
+  height: 650px;
+  border-radius: 0px 10px 10px 0px;
+  padding-left: 94px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.seventh_section {
+  display: flex;
+  margin-top: 160px;
+  flex-direction: row;
+}
+.seventh_section .seventh_title {
+  font-family: Jost;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #E7816B;
+  align-items: center;
+  justify-content: center;
+}
+.seventh_section .seventh_paragraph {
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  justify-content: center;
+}
+
+.bcg_image {
+  background-image: url(../../static/images/3hero-bg.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1111px;
+  height: 650px;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 95px;
+  gap: 24px;
+}
+
+.seventh_pic {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.location-section {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  flex-wrap: wrap;
+}
+
+.map-tit {
+  width: 730px;
+  height: 326px;
+  flex-shrink: 0;
+  background-image: url(../../static/images/map-bg.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding-left: 95px;
+}
+.map-tit .map-contact {
+  display: flex;
+  gap: 30px;
+}
+.map-tit h1 {
+  color: #E7816B;
+  font-family: Jost;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 120% */
+}
+.map-tit p {
+  width: 255px;
+  color: #333136;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.map-tit p span {
+  color: #333136;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+}
+
+.location-section-row {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.contact_us {
+  width: auto;
+  height: 480px;
+  flex-shrink: 0;
+  background-image: url(../../static/images/contact-bg.png);
+  display: flex;
+  align-items: center;
+  padding-left: 95px;
+  margin-top: 64px;
+  flex-wrap: wrap;
+}
+
+.contact-us__tit {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.contact-us__tit h1 {
+  width: 540px;
+  color: #FFF;
+  font-family: Jost;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+}
+.contact-us__tit p {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-end;
+}
+form input {
+  background: transparent;
+  width: 380px;
+  height: 38px;
+  flex-shrink: 0;
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #ffffff;
+}
+form .input-massage {
+  width: 380px;
+  height: 102px;
+  flex-shrink: 0;
+}
+
+.submit-button {
+  width: 152px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #FFF;
+  border: none;
+  color: #333136;
+  text-align: center;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #bcc9d4;
+  transition: all 0.3s ease;
+}
+
+::-moz-placeholder {
+  opacity: 0.5;
+  color: #FFF;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+::placeholder {
+  opacity: 0.5;
+  color: #FFF;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+footer {
+  background: #1D1C1E;
+  padding-top: 144px;
+  height: 490px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-nav img {
+  width: 196px;
+  height: 24px;
+}
+.footer-nav ul {
+  display: flex;
+  gap: 42px;
+}
+
+.item-li {
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+}
+.item-li a {
+  text-decoration: none;
+  color: #FFF;
+}
+.item-li :hover {
+  color: #a0a0a0;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+.hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: auto;
+  height: 1px;
+  opacity: 0.1;
+  background: #FFF;
+}
+
+.footer__contact {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+}
+
+.adress {
+  width: 350px;
+}
+.adress :first-child {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  opacity: 0.5;
+}
+.adress :last-child {
+  opacity: 0.5;
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.contact-us {
+  width: 350px;
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  opacity: 0.5;
+}
+
+.social {
+  display: flex;
+  gap: 16px;
+  margin-left: 197px;
+  align-items: center;
+}
+
+svg:hover {
+  cursor: pointer;
+}
+svg:hover path {
+  fill: rgb(170, 104, 5);
+  transition: all 0.4s ease;
+}
+
+.country {
+  align-items: center;
+  text-align: center;
+}
+
+.card_country {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 160px;
+}
+
+.name_country {
+  margin-top: 48px;
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.fifth_card_buttons {
+  padding: 18px 18.5px;
+  color: #FFF;
+  margin-top: 32px;
+  font-family: Jost;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #E7816B;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.fifth_card_buttons:hover {
+  background-color: #E7816B;
+  opacity: 0.5;
+  transition: all 0.4s ease-in-out;
+}
+
+.last-section {
+  width: auto;
+  height: 292px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 160px;
+  padding: 72px 96px 46px 95px;
+  background-image: url(../../static/images/bg-get.png);
+}
+.last-section h2 {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+.last-section p {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.last-section button {
+  width: 152px;
+  height: 56px;
+  flex-shrink: 0;
+  background: #FFF;
+  border-radius: 8px;
+  border: none;
+}
+.last-section button p {
+  color: #333136;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.get-btn:hover {
+  background-color: #d5d4d4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,10 @@
+@mixin theme($theme :red, $wht: 200px, $hght: 200px) {
+    background: $theme;
+    width: $wht;
+    height: $hght;
+    color: aqua;
+}
+
+.box {
+    @include theme;
+}

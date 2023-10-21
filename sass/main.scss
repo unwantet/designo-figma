@@ -1,0 +1,24 @@
+@charset "utf-8";
+@use 'rezet';
+@use 'variables';
+@use 'fonts';
+@use 'base';
+@use 'mixin';
+
+
+
+// <----------blocks----------->
+
+@use 'blocks/header';
+@use 'blocks/navbar';
+@use 'blocks/section';
+@use 'blocks/footer';
+@use 'blocks/5page_style';
+
+// <-----------components---------->
+
+@use'components/link-card';
+@use 'components/footer-section';
+@use 'components/card';
+
+@use 'media';

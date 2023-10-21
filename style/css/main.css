@@ -1,0 +1,728 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-ExtraBold.eot");
+  src: url("/fonts/Jost-ExtraBold.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-ExtraBold.woff2") format("woff2"), url("/fonts/Jost-ExtraBold.woff") format("woff"), url("/fonts/Jost-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-SemiBold.eot");
+  src: url("/fonts/Jost-SemiBold.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-SemiBold.woff2") format("woff2"), url("/fonts/Jost-SemiBold.woff") format("woff"), url("/fonts/Jost-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-Medium.eot");
+  src: url("/fonts/Jost-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-Medium.woff2") format("woff2"), url("/fonts/Jost-Medium.woff") format("woff"), url("/fonts/Jost-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-Thin.eot");
+  src: url("/fonts/Jost-Thin.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-Thin.woff2") format("woff2"), url("/fonts/Jost-Thin.woff") format("woff"), url("/fonts/Jost-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-Light.eot");
+  src: url("/fonts/Jost-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-Light.woff2") format("woff2"), url("/fonts/Jost-Light.woff") format("woff"), url("/fonts/Jost-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-Regular.eot");
+  src: url("/fonts/Jost-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-Regular.woff2") format("woff2"), url("/fonts/Jost-Regular.woff") format("woff"), url("/fonts/Jost-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-Bold.eot");
+  src: url("/fonts/Jost-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Jost-Bold.woff2") format("woff2"), url("/fonts/Jost-Bold.woff") format("woff"), url("/fonts/Jost-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1111px;
+  margin: 0 auto;
+  padding: 0 0;
+}
+
+body{
+    background-image: url(../../static/webp/body-bg-img.webp);
+    background-position: left;
+    background-position-y: 475px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 1096px 594px;
+}
+
+main{
+  background-image: url(../../static/webp/body-bg-img2.webp);
+  background-position: right;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 1000px;
+}
+
+
+.box {
+  background: red;
+  width: 200px;
+  height: 200px;
+  color: aqua;
+}
+
+header {
+  padding-top: 64px;
+}
+
+.header__learn {
+  width: auto;
+  height: 640px;
+  margin-top: 67px;
+  border-radius: 15px;
+  background: #E7816B;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 95px;
+  gap: 40px;
+}
+.header__learn .learn__main {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+}
+.header__learn .learn__tit {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.header__learn button {
+  width: 152px;
+  height: 56px;
+  flex-shrink: 0;
+  background: #FFF;
+  border-radius: 8px;
+  border: none;
+}
+.header__learn button  {
+  color: #333136;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.header__learn {
+  background-image: url(../../static/images/Oval.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.learn__btn:hover {
+  background-color: #d5d4d4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.learn__phone-img {
+  position: absolute;
+  right: 98.6px;
+  bottom: -70px;
+  filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.5));
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 196px;
+  height: 24px;
+}
+
+ul {
+  display: flex;
+  gap: 42px;
+}
+
+li {
+  font-family: "Jost";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 14px;
+  letter-spacing: 2px;
+}
+li a {
+  text-decoration: none;
+  color: #333136;
+}
+li :hover {
+  color: #000000;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+.first_section {
+  display: flex;
+  gap: 30px;
+  margin-top: 160px;
+}
+.first_section a {
+  text-decoration: none;
+}
+
+.first__link-card:hover {
+  background-color: #E7816B;
+}
+
+.first__link-card {
+  width: 541px;
+  height: 640px;
+  flex-shrink: 0;
+  background-image: url(../../static/images/notebook\ \(1\).png);
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  border-radius: 15px;
+}
+.first__link-card .bg {
+  width: 541px;
+  height: 640px;
+  position: absolute;
+  border-radius: 15px;
+}
+.first__link-card :first-child {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+.first__link-card .link-row {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.first__link-card :hover {
+  background: rgba(231, 130, 107, 0.3568627451);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.section__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.second_section {
+  display: flex;
+  gap: 30px;
+  margin-top: 160px;
+}
+
+.second__info {
+  width: 350px;
+  height: 412px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.second__info :nth-child(2) {
+  color: #333136;
+  text-align: center;
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 5px;
+}
+.second__info .info__txt {
+  color: #333136;
+  text-align: center;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.second__info img {
+  width: 202px;
+  height: 202px;
+}
+
+footer {
+  background: #1D1C1E;
+  padding-top: 144px;
+  height: 490px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-nav img {
+  width: 196px;
+  height: 24px;
+}
+.footer-nav ul {
+  display: flex;
+  gap: 42px;
+}
+
+.item-li {
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+}
+.item-li a {
+  text-decoration: none;
+  color: #FFF;
+}
+.item-li :hover {
+  color: #a0a0a0;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+.hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: auto;
+  height: 1px;
+  opacity: 0.1;
+  background: #FFF;
+}
+
+.footer__contact {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+}
+
+.adress {
+  width: 350px;
+}
+.adress :first-child {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  opacity: 0.5;
+}
+.adress :last-child {
+  opacity: 0.5;
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.contact-us {
+  width: 350px;
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  opacity: 0.5;
+}
+
+.social {
+  display: flex;
+  gap: 16px;
+  margin-left: 197px;
+  align-items: center;
+}
+
+svg:hover {
+  cursor: pointer;
+}
+svg:hover path {
+  fill: rgb(170, 104, 5);
+  transition: all 0.4s ease;
+}
+
+.first__sec-link-card {
+  width: 541px;
+  height: 308px;
+  flex-shrink: 0;
+  background-image: url(/static/images/phone-on-hand\ \(1\).jpg);
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  border-radius: 15px;
+}
+.first__sec-link-card .bg {
+  width: 541px;
+  height: 308px;
+  position: absolute;
+  border-radius: 15px;
+}
+.first__sec-link-card :first-child {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+.first__sec-link-card .link-row {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.first__sec-link-card :hover {
+  background: rgba(231, 130, 107, 0.3568627451);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.first__third-link-card {
+  width: 541px;
+  height: 308px;
+  flex-shrink: 0;
+  background-image: url(/static/images/graphic-bg.jpg);
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  border-radius: 15px;
+}
+.first__third-link-card .bg {
+  width: 541px;
+  height: 308px;
+  position: absolute;
+  border-radius: 15px;
+}
+.first__third-link-card :first-child {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+.first__third-link-card .link-row {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.first__third-link-card :hover {
+  background: rgba(231, 130, 107, 0.3568627451);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.web-design_section {
+  display: flex;
+  margin-top: 64px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  height: 252px;
+  width: auto;
+  background-image: url(../../static/webp/web-design-sc-bg.webp);
+}
+.web-design_section h1 {
+  height: 52px;
+  color: #FFF;
+  text-align: center;
+  font-family: Jost;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+}
+.web-design_section p {
+  height: 52px;
+  color: #FFF;
+  text-align: center;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.first__fourth-link-card {
+  width: 541px;
+  height: 308px;
+  flex-shrink: 0;
+  background-image: url(../../static/images/notebook\ \(1\).png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  border-radius: 15px;
+}
+.first__fourth-link-card .bg {
+  width: 541px;
+  height: 308px;
+  position: absolute;
+  border-radius: 15px;
+}
+.first__fourth-link-card :first-child {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+.first__fourth-link-card .link-row {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.first__fourth-link-card :hover {
+  background: rgba(231, 130, 107, 0.3568627451);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.comp-section__cards {
+  display: flex;
+  gap: 30px;
+}
+
+.last-section {
+  width: auto;
+  height: 292px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 160px;
+  padding: 72px 96px 46px 95px;
+  background-image: url(../../static/images/bg-get.png);
+}
+.last-section h2 {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+.last-section p {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.last-section button {
+  width: 152px;
+  height: 56px;
+  flex-shrink: 0;
+  background: #FFF;
+  border-radius: 8px;
+  border: none;
+}
+.last-section button p {
+  color: #333136;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.get-btn:hover {
+  background-color: #d5d4d4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cards {
+  margin-top: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.main_card {
+  width: 350px;
+  height: 478px;
+  flex-shrink: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+.main_card :hover {
+  background-color: #f0d5c1;
+  transition: 0.2s ease;
+}
+
+.main-card-tit {
+  width: 350px;
+  height: 158px;
+  background-color: #FDF3F0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 0 0 15px 15px;
+}
+.main-card-tit .card-tit__main-p {
+  color: #E7816B;
+  text-align: center;
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 5px;
+}
+.main-card-tit p {
+  color: #333136;
+  text-align: center;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}/*# sourceMappingURL=main.css.map */
