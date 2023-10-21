@@ -286,4 +286,9 @@ form{
     line-height: 26px; 
   }
 
+  .submit-button::placeholder{
+    width: 380px;
+    height: 102px;
+    flex-shrink: 0;
+  }
   
