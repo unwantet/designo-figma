@@ -203,7 +203,7 @@ li :hover {
   line-height: 26px;
 }
 
-.five_title_ {
+.about-us_title_ {
   font-family: "Jost";
   font-size: 48px;
   font-weight: 500;
@@ -212,7 +212,7 @@ li :hover {
   color: #E7816B;
 }
 
-.five_title_first {
+.about-us_title_first {
   font-family: "Jost";
   font-size: 48px;
   font-weight: 500;
@@ -230,7 +230,7 @@ li :hover {
   flex-direction: row-reverse;
 }
 
-.fifth_paragraph {
+.about-page_paragraph {
   font-family: Jost;
   font-size: 16px;
   font-weight: 400;
@@ -585,7 +585,7 @@ svg:hover path {
   text-align: center;
 }
 
-.fifth_card_buttons {
+.about-page_card_buttons {
   padding: 18px 18.5px;
   color: #FFF;
   margin-top: 32px;
@@ -602,7 +602,7 @@ svg:hover path {
   transition: all 0.4s ease-in-out;
 }
 
-.fifth_card_buttons:hover {
+.about-page_card_buttons:hover {
   background-color: #E7816B;
   opacity: 0.5;
   transition: all 0.4s ease-in-out;
